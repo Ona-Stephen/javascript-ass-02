@@ -31,4 +31,4 @@ if (user_price <= 500000 && user_price >= 300000) {
 let question = prompt("What is your name?: ").toUpperCase();
 let answer = "ONA";
 
-console.log(question === answer);
+console.log(question === answer ? "CORRECT" : "WRONG");
