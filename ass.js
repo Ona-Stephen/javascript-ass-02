@@ -2,6 +2,8 @@ import pkg from "prompt-sync";
 
 const prompt = pkg();
 
+//QUESTION 1 BEGINS
+
 let number = Number(prompt("Enter any number: "));
 
 if (number % 2 == 0 && number <= 5) {
@@ -13,6 +15,10 @@ if (number % 2 == 0 && number <= 5) {
 } else {
   console.log("Weird");
 }
+
+//END OF QUSETION 1
+
+//BEGINNING OF QUESTION 2
 
 let price_of_house = 1000000;
 let user_price = Number(prompt("What is your budget?: "));
@@ -28,7 +34,52 @@ if (user_price <= 500000 && user_price >= 300000) {
   console.log("Sorry, you are not eligible for this purchase");
 }
 
-let question = prompt("What is your name?: ").toUpperCase();
-let answer = "ONA";
+//END OF QUESTION 2
 
-console.log(question === answer ? "CORRECT" : "WRONG");
+//BEGINNING OF QUESTION 3
+
+let question_1 = Number(prompt("What year did America gain independence?: "));
+
+if (question_1 === 1776) {
+  console.log("You are correct!");
+} else {
+  console.log("You are wrong!");
+}
+
+let question_2 = prompt("Who was the first president of America?: ");
+
+if (question_2.toLowerCase() === "George Rosevelt") {
+  console.log("You are correct!");
+} else {
+  console.log("You are wrong!");
+}
+
+let question_3 = prompt("What continent is Mount Kilimanjaro?: ");
+
+if (question_3.toLowerCase() === "Africa") {
+  console.log("You are correct!");
+} else {
+  console.log("You are wrong!");
+}
+
+let question_4 = prompt(
+  "Which country is referred to as the Giant of Africa?: "
+);
+
+if (question_4.toLowerCase() === "Nigeria") {
+  console.log("You are correct!");
+} else {
+  console.log("You are wrong!");
+}
+
+let question_5 = prompt(
+  "Who is the present President of the Federal Republic of Nigeria?: "
+);
+
+if (question_5.toLowerCase() === "Bola Ahmed Tinubu") {
+  console.log("You are correct!");
+} else {
+  console.log("You are wrong!");
+}
+
+//END OF ALL QUESTIONS
