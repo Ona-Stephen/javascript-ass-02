@@ -4,17 +4,29 @@ const prompt = pkg();
 
 //QUESTION 1 BEGINS
 
-let number = Number(prompt("Enter any number: "));
+let n = Number(prompt("Enter any number: "));
 
-if (number % 2 == 0 && number <= 5) {
-  console.log("Not weird");
-} else if (number % 2 == 0 && number <= 20) {
+if (n % 2 != 0) {
   console.log("Weird");
-} else if (number % 2 == 0 && number >= 20) {
-  console.log("Not weird");
-} else {
+} else if (n % 2 == 0 && n <= 5) {
+  console.log("Not Weird");
+} else if (n % 2 == 0 && n >= 6 && n <= 20) {
   console.log("Weird");
+} else if (n % 2 == 0 && n >= 20) {
+  console.log("Not weird");
 }
+
+// let number = Number(prompt("Enter any number: "));
+
+// if (number % 2 == 0 && number <= 5) {
+//   console.log("Not weird");
+// } else if (number % 2 == 0 && number <= 20) {
+//   console.log("Weird");
+// } else if (number % 2 == 0 && number >= 20) {
+//   console.log("Not weird");
+// } else {
+//   console.log("Weird");
+// }
 
 //END OF QUSETION 1
 
